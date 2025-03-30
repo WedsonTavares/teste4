@@ -1,0 +1,72 @@
+{
+    "info": {
+      "name": "Teste Intuitive Care",
+      "description": "Coleção de requisições para testar a API do backend.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Buscar Operadoras - 3S",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:5000/buscar?termo=3S",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": ["buscar"],
+            "query": [
+              {
+                "key": "termo",
+                "value": "3S"
+              }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Buscar Operadoras - UNIMED",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:5000/buscar?termo=UNIMED",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": ["buscar"],
+            "query": [
+              {
+                "key": "termo",
+                "value": "UNIMED"
+              }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Buscar Operadoras - ODONTO",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:5000/buscar?termo=ODONTO",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": ["buscar"],
+            "query": [
+              {
+                "key": "termo",
+                "value": "ODONTO"
+              }
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }

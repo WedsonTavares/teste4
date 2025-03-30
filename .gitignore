@@ -1,0 +1,5 @@
+# Ignorar o ambiente virtual do Python
+venv/
+
+# Ignorar dependências do Node.js
+node_modules/

@@ -1,0 +1,99 @@
+/* Reset básico de estilos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2rem;
+}
+
+input {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para a área de pesquisa */
+.search-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  /* Título */
+  .search-container h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  /* Input de busca */
+  .search-container input {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-container input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .search-container ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .search-container li {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-container li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container strong {
+    color: #007bff;
+  }
+  
+  .search-container small {
+    color: #6c757d;
+  }
+  
+
+  .loading-spinner {
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+    color: #007bff;
+  }
+  
