@@ -1,137 +1,99 @@
 Teste 4 Intuitive Care
-Este projeto é uma aplicação web que interage com um servidor Python para realizar buscas em uma lista de cadastros de operadoras. Ele foi desenvolvido usando Vue.js no frontend e Flask no backend.
 
 Funcionalidades
-Busca de Operadoras:
+1. Busca de Operadoras
+Permite pesquisar operadoras de saúde e odontologia com base em um termo textual.
 
-Permite buscar operadoras de saúde e odontologia com base em um termo textual.
-Exibe informações como:
+Exibe informações detalhadas das operadoras, incluindo:
+
 Nome Fantasia
+
 Modalidade
+
 Cidade e Estado
-Telefone
-API Backend:
 
-Desenvolvida em Python com Flask.
+
+
+2. API Backend (Flask)
+Desenvolvida em Python com o framework Flask.
+
 Rota /buscar:
+
 Realiza buscas textuais no arquivo CSV de operadoras.
-Retorna os registros mais relevantes.
-Frontend:
 
-Desenvolvido em Vue.js.
-Interface simples e responsiva para realizar buscas e exibir resultados.
-Testes com Postman:
+Retorna os registros mais relevantes conforme o termo de pesquisa.
 
+3. Frontend (Vue.js)
+Desenvolvido em Vue.js para uma interface interativa e responsiva.
+
+Permite realizar buscas e visualizar os resultados de forma simples e eficiente.
+
+4. Testes com Postman
 Coleção de requisições configurada no arquivo api-collection.json.
-Permite testar a API diretamente no Postman.
 
+Facilita o teste da API diretamente no Postman.
 
-
-GitHub Copilot
-Aqui está um exemplo de um arquivo README.md claro e bem estruturado para o seu projeto:
-
-Teste Intuitive Care
-Este projeto é uma aplicação web que interage com um servidor Python para realizar buscas em uma lista de cadastros de operadoras. Ele foi desenvolvido usando Vue.js no frontend e Flask no backend.
-
-Funcionalidades
-Busca de Operadoras:
-
-Permite buscar operadoras de saúde e odontologia com base em um termo textual.
-Exibe informações como:
-Nome Fantasia
-Modalidade
-Cidade e Estado
-Telefone
-API Backend:
-
-Desenvolvida em Python com Flask.
-Rota /buscar:
-Realiza buscas textuais no arquivo CSV de operadoras.
-Retorna os registros mais relevantes.
-Frontend:
-
-Desenvolvido em Vue.js.
-Interface simples e responsiva para realizar buscas e exibir resultados.
-Testes com Postman:
-
-Coleção de requisições configurada no arquivo api-collection.json.
-Permite testar a API diretamente no Postman.
-
-
-
-Estrutura do Projeto
-
-Teste 4/
-├── backend/
-│   ├── app.py                # Servidor Flask
-│   ├── dados/
-│   │   └── Relatorio_cadop.csv # Arquivo CSV com os dados
-│   └── requirements.txt      # Dependências do Python
-├── frontend/
-│   ├── public/
-│   │   └── index.html        # HTML principal
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── Search.vue    # Componente Vue para busca
-│   │   ├── styles/
-│   │   │   └── index.css     # Estilos globais
-│   │   ├── App.vue           # Componente principal
-│   │   ├── main.js           # Ponto de entrada do Vue.js
-│   │   
-│   ├── package.json          # Configuração do npm
-│   └── node_modules/         # Dependências do Node.js 
-├── postman/
-│   └── api-collection.json   # Coleção do Postman para testar a API
-
-├── .gitignore(ignorar venv e node_modules)
-└── README.md                 # Documentação do projeto
-
-
-
-
-Como rodar o projeto
-
+Como Rodar o Projeto
 1. Backend
+Navegue até a pasta backend.
 
--Navegue até a pasta backend
--Certifique-se de que o Python 3 está instalado.
--Crie e ative um ambiente virtual:
+Certifique-se de que o Python 3 está instalado.
 
-python -m venv venv
+Crie e ative um ambiente virtual:
 
-venv\Scripts\activate  
+No Windows, execute: python -m venv venv e venv\Scripts\activate.
 
+No macOS/Linux, execute: python -m venv venv e source venv/bin/activate.
 
-- Isntale as dependências: 
+Instale as dependências com o comando: pip install -r requirements.txt.
 
-pip install -r backend/requirements.txt
+Execute o servidor Flask com o comando: python app.py.
 
-
--Execute o comando:
-python backend/app.py
-
-clique no link do servidor local.
-
+O backend estará rodando localmente. Abra o link do servidor local no navegador.
 
 2. Frontend
+Certifique-se de que o Node.js está instalado.
 
--Certifique-se de que o Node.js está instalado.
--Navegue até a pasta frontend:
+Navegue até a pasta frontend.
 
-npm install
+Instale as dependências do frontend com o comando: npm install.
 
-npm run serve
+Inicie o servidor de desenvolvimento com o comando: npm run serve.
 
-
--acesse o link do servidor local
-
+Acesse o link do servidor local para interagir com a aplicação.
 
 Testando a API no Postman
-Importe o arquivo api-collection.json no Postman:
-Caminho: api-collection.json
+Importe a coleção de requisições no Postman, localizando o arquivo api-collection.json na pasta postman.
+
 Teste as requisições disponíveis, como:
+
 Buscar Operadoras - 3S
+
 Buscar Operadoras - UNIMED
+
 Buscar Operadoras - ODONTO
 
+Essas requisições permitem testar a rota /buscar da API com diferentes parâmetros.
 
+Tecnologias Utilizadas
+Backend:
+
+Python 3
+
+Flask
+
+Biblioteca pandas para manipulação de arquivos CSV
+
+Frontend:
+
+Vue.js
+
+CSS moderno com design responsivo
+
+
+Outras ferramentas:
+
+Postman para testar a API
+
+
+Sinta-se à vontade para contribuir com este projeto! Se você quiser sugerir melhorias ou corrigir problemas, basta criar um fork do repositório, fazer suas modificações e enviar um pull request.
